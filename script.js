@@ -5,19 +5,14 @@ $(document).ready(function(){
         }else{
             $(".navbar").removeClass("sticky");
         }
-        if(this.scrollY > 500){
-            $(".scroll-up-btn").addClass("show");
-        }else{
-            $(".scroll-up-btn").removeClass("show");
-        }
     });
 
-    //slide up script
+    // Download Resume function
 
-    $(".scroll-up-btn").click(function(){
-        $('html').animate({scrollTop: 0});
+    $("#resumeDownload").click(function(e){
+        e.preventDefault();
+        window.location.href = "Files/Ramesh.pdf";
     });
-
     //Typing animaiton script
     var typed = new Typed(".typing" , {
         strings: [ "MERN Developer","Full Stack Web Developer", "Designer" , "Freelancer" ],

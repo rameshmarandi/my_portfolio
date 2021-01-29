@@ -9,30 +9,6 @@
 html{
     scroll-behavior: smooth;
 }
-.scroll-up-btn{
-    position: fixed;
-    height: 45px;
-    width:42px;
-    background: crimson;
-    right: 30px;
-    bottom: 30px;
-    text-align: center;
-    line-height:45px ;
-    color: #fff;
-    z-index: 9999;
-    font-size: 30px;
-    border-radius: 6px;
-    cursor: pointer;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s ease
-}
-.scroll-up-btn .show{
-    bottom: 30px;
-    opacity: 1;
-    pointer-events: auto;
-
-}
 
 /* simillar code for section heading start*/
 section{
@@ -399,7 +375,7 @@ width: 45%;
 .skill .skill_content .column{
     width: calc(50% - 30px);
 }
-.skill .skill_content.left .text{
+.skill .skill_content .left .text{
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
@@ -407,7 +383,7 @@ width: 45%;
 .skill .skill_content.left p{
     text-align: justify;
 }
-.skill .skill_content .left a{
+.skill .skill_content .left button{
        
     color:#fff;
     padding: 6px 18px;
@@ -422,7 +398,7 @@ width: 45%;
     box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
 
 }
-.skill .skill_content .left a:hover{
+.skill .skill_content .left button:hover{
     color:crimson;
     background: none;
     border: 1px solid crimson;
@@ -485,8 +461,12 @@ width: 45%;
     width: 70%;
     background:#6ab04c;
 }
-
-
+#dots{
+    font-size: 25px;
+}
+#more{
+    display: none;
+}
 /* Contact Section Start */
 /* .contact {
     background:#111;
