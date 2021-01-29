@@ -338,7 +338,7 @@ width: 45%;
     position: absolute;
     bottom: -12px;
     left: 50%;
-    font-size: 14px;
+    font-size: 20px;
     color: crimson;
     padding: 5px;
     background: #111;
@@ -738,6 +738,9 @@ footer span a:hover{
     .services .services_content .card{
         width: 90%;
       
+    }
+    .services .title::after{
+        font-size: 15px;
     }
 }
 @media (max-width:500px){
